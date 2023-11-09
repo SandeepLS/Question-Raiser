@@ -10,7 +10,7 @@ const Users = () => {
         <div className='home-container-1'>
             <LeftSidebar />
             <div className="home-container-2" style={{marginTop: "30px"}}>
-                <h1 style={{fontWeight: "400"}}>Users</h1>
+                <h2 style={{fontWeight: "600"}}>Users</h2>
                 <UsersList /> 
             </div>
         </div>

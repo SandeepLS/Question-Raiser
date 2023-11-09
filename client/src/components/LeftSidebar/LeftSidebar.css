@@ -5,6 +5,9 @@
     transform: translateZ(0);
     box-sizing: border-box;
     font-size: 13px;
+    border-radius: 30px;
+    
+    
 }
 
 .side-nav{
@@ -13,6 +16,7 @@
     position: sticky;
     margin: 50px 0px;
     padding: 20px 0px;
+    padding-left: 30px;
 }
 
 .side-nav-div{

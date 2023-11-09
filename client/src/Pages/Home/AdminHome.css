@@ -1,0 +1,30 @@
+.adm1 {
+    text-align: center;
+    margin-top: 8%;
+  }
+  
+  .adm2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 80%; /* Adjust the width as needed */
+    text-align: center;
+    margin: 0 auto; /* Center the table on the page */
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center; /* Center the content in the cells */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

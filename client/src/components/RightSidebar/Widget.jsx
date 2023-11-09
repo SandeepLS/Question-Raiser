@@ -2,7 +2,7 @@ import React from 'react'
 import './RightSidebar.css'
 import comment from '../../assets/comment-alt-solid.svg'
 import pen from '../../assets/pen-solid.svg'
-import blackLogo from '../../assets/blacklogo.svg'
+import blackLogo from '../../assets/ques4.svg'
 
 const Widget = () => {
     return (
@@ -30,7 +30,7 @@ const Widget = () => {
                 </div>
                 <div className='right-sidebar-div-2'>
                     <img src={blackLogo} alt="pen" width='18'/>
-                    <p>Outdated Answers: accepted answer is now unpinned on Stack Overflow</p>
+                    <p>Outdated Answers: accepted answer is now unpinned on Question-Raiser</p>
                 </div>
             </div>
             <h4>Hot Meta Posts</h4>

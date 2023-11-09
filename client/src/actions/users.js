@@ -1,6 +1,7 @@
-import * as api from '../api'
+import * as api from '../api/index'
 
 export const fetchAllUsers = () => async (dispatch) => {
+ 
     try {
         const { data } = await api.getAllUsers()
         dispatch({ type: 'FETCH_USERS', payload: data})

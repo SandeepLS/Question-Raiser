@@ -6,13 +6,26 @@ export const getAllUsers = async (req, res) => {
         const allUsers = await users.find();
         const allUserDetails = []
         allUsers.forEach(user => {
-            allUserDetails.push({ _id: user._id, name: user.name, about: user.about, tags: user.tags, joinedOn: user.joinedOn })
+            allUserDetails.push({ _id: user._id, name: user.name, email: user.email,userType: user.userType,  about: user.about, tags: user.tags, joinedOn: user.joinedOn })
         })
-        res.status(200).json(allUserDetails);
+        res.status(200).json(allUserDetails); 
     } catch (error) {
         res.status(404).json({ message: error.message });
     }
 }
+
+export const deleteUser = async (req,res) => { 
+    const { id } = req.query;
+    try{
+        users.findByIdAndRemove({_id: id }, function(err, res){
+            console.log(err);
+        });
+        res.send({ststus:"ok", data:"Deleted"})
+    }catch (err) {
+        console.log(err)
+    }
+}
+
 
 export const updateProfile = async (req, res) => {
     const { id: _id } = req.params;

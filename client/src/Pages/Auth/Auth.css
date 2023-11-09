@@ -22,6 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .auth-container-2 form{
@@ -52,16 +53,19 @@
 }
 
 .auth-container-2 form label:nth-child(4){
-    display: flex;
+    /* display: flex; */
 }
 
 .auth-container-2 form label:nth-child(4) input{
-    width: 15%;
+    width: 91%;
     margin: 13px 0px;
+    margin-top: -25px;
+    /* margin-bottom: -5px; */
+
 }
 
 .auth-btn{
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 5px;
     background-color: #009dff;
     border: solid 1px #009dff;
@@ -90,4 +94,26 @@ input#check{
     height: 15px;
     margin:auto 0;
     margin-right: 5px;
+}
+
+.ss{
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.si{
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

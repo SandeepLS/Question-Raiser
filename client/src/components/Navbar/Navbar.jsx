@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import decode from 'jwt-decode'
 
-import logo from '../../assets/logo.png'
-import search from '../../assets/search-solid.svg'
+import home from '../../assets/home1.svg'
+// import search from '../../assets/search-solid.svg'
 import Avatar from '../../components/Avatar/Avatar'
 import './Navbar.css'
 import { setCurrentUser } from '../../actions/currentUser'
@@ -13,7 +13,7 @@ const Navbar = () => {
     const dispatch = useDispatch()
     var User = useSelector((state) => (state.currentUserReducer))
     const navigate = useNavigate();
-    
+
     const handleLogout = () => {
         dispatch({ type: 'LOGOUT'});
         navigate('/')
@@ -35,15 +35,19 @@ const Navbar = () => {
         <nav className='main-nav'>
             <div className='navbar'>
                 <Link to='/' className='nav-item nav-logo'>
-                    <img src={logo} alt='logo' />
+                    <img src={home} alt='home' width="40" />
                 </Link>
-                <Link to='/' className='nav-item nav-btn'>About</Link>
-                <Link to='/' className='nav-item nav-btn'>Products</Link>
-                <Link to='/' className='nav-item nav-btn'>For Teams</Link>
-                <form>
+                <div className='cmru'>
+                <h3>CMR University Question-Raiser Platform</h3>
+                </div>
+               
+                <Link to='/Admin' className='nav-item nav-btn'></Link>
+                <Link to='/Admin' className='nav-item nav-btn'></Link>
+                <Link to='/Admin' className='nav-item nav-btn'></Link>
+                {/* <form>
                     <input type="text" placeholder='Search...'/>
                     <img src={search} alt="search" width="18" className='search-icon'/>
-                </form>
+                </form> */}
                 { User === null ? 
                     <Link to='/Auth' className='nav-item nav-links'>Log in</Link> : 
                     <>
