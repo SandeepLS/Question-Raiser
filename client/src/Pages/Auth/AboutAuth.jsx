@@ -3,13 +3,13 @@ import React from 'react'
 const AboutAuth = () => {
     return (
         <div className="auth-container-1">
-            <h1>Join CMR Question-Raiser Community</h1>
-            <p>Get unstuck — ask a question</p>
-            <p>Unlock new privileges like voting and commenting</p>
-            <p>Save your favorite tags, filters, and jobs</p>
-            <p>Earn reputation and badges</p>
-            <p style={{fontSize: '13px', color: '#666767'}}>Collaborate and share knowledge with a public group</p>
-            <p style={{fontSize: '13px', color: "#007ac6"}}>Get Question Raiser for Teams free for CMR Users.</p>
+            <h1>Join DealsDray Online Pvt. Ltd. Community</h1>
+            
+            <p>DealsDray is a unique B2B platform,</p>
+            <p>that has been specifically designed for all type of business requirements</p>
+            <p>be it of a small town retailer or a big whole seller.</p>
+            <p style={{fontSize: '13px', color: '#666767'}}>Collaborate and share knowledge with a public people</p>
+            <p style={{fontSize: '13px', color: "#007ac6"}}>Get B2B ideas free for Indian citizen.</p>
         </div>
     )
 }

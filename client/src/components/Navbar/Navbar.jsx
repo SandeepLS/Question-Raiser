@@ -38,7 +38,7 @@ const Navbar = () => {
                     <img src={home} alt='home' width="40" />
                 </Link>
                 <div className='cmru'>
-                <h3>CMR University Question-Raiser Platform</h3>
+                <h3>DealsDray Online Pvt. Ltd.</h3>
                 </div>
                
                 <Link to='/Admin' className='nav-item nav-btn'></Link>

@@ -11,20 +11,20 @@ const LeftSidebar = () => {
                     <p>Home</p>
                 </NavLink>
                 <div className='side-nav-div'>
-                    <div><p>PUBLIC</p></div>
+                    {/* <div><p>PUBLIC</p></div> */}
                     <NavLink to='/Questions' className='side-nav-links' activeclassname='active'>
                         <img src={Globe} alt="Globe" />
-                        <p style={{paddingLeft: "10px"}}> Questions </p>
+                        <p style={{paddingLeft: "10px"}}> About </p>
                     </NavLink>
-                    <NavLink to='/Tags' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
+                    {/* <NavLink to='/Tags' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
                         <p>Tags</p>
-                    </NavLink>
+                    </NavLink> */}
                     <NavLink to='/Users' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
-                        <p>Users</p>
+                        <p>Employees</p>
                     </NavLink>
-                    <NavLink to='/Campus' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
+                    {/* <NavLink to='/Campus' className='side-nav-links' activeclassname='active' style={{paddingLeft: "40px"}}>
                         <p>Campus</p>
-                    </NavLink>
+                    </NavLink> */}
                 </div>
             </nav>
         </div>
